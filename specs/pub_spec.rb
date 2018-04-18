@@ -38,4 +38,8 @@ class PubTest < MiniTest::Test
     assert_equal("beer", drink.name)
   end
 
+  def test_get_price
+    assert_equal(5, @pub.get_price("beer"))
+  end
+
 end

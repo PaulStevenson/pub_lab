@@ -26,4 +26,13 @@ class Pub
     end
   end
 
+  def get_price(drink_name)
+    for drink in @inventory
+        return drink.price if drink_name == drink.name
+    end
+  end
+
+  def take_money(amount)
+    @till += amount
+  end
 end
